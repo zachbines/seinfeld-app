@@ -1,0 +1,260 @@
+html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,footer,header,nav,section{display:block}h1{font-size:2em;margin:.67em 0}figcaption,figure,main{display:block}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent;-webkit-text-decoration-skip:objects}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}dfn{font-style:italic}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}audio,video{display:inline-block}audio:not([controls]){display:none;height:0}img{border-style:none}svg:not(:root){overflow:hidden}button,input,optgroup,select,textarea{font-family:sans-serif;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}button,html [type=button],[type=reset],[type=submit]{-webkit-appearance:button}button::-moz-focus-inner,[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner{border-style:none;padding:0}button:-moz-focusring,[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{display:inline-block;vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details,menu{display:block}summary{display:list-item}canvas{display:inline-block}template{display:none}[hidden]{display:none}
+
+.clearfix:after {visibility: hidden; display: block; font-size: 0; content: ''; clear: both; height: 0; }
+
+html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;}
+
+*, *:before, *:after {box-sizing: inherit}
+
+.sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; border: 0; padding: 0; white-space: nowrap; clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden;}
+
+header,
+h1,
+button,
+p,
+label,
+input,
+form {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 62.5%;
+    font-family: 'Courier Prime', monospace;
+}
+
+/*  top bit */
+
+header {
+    height: 30vh;
+    text-align: center;
+}
+
+.juno {
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: end;
+    opacity: 0.8;
+    font-size: 1rem;
+    margin-right: 20px;
+}
+
+a {
+    display: inline-block;
+    font-size: 1.4rem;
+    color: black;
+    text-decoration: none;
+    transition: all 100ms;
+}
+
+a:hover,
+a:focus {
+    color: rgb(199, 32, 32);
+    background-color:rgb(241, 207, 54);
+    text-shadow: 1px 1px black;
+    font-style: italic;
+    transform: rotateZ(-5deg);
+    border-radius: 50%;
+    border: none;
+    box-shadow: 1px 1px 1px black;   
+}
+
+.banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    width: 200px;
+    border-radius: 15px;
+}
+
+h1 {
+    font-size: 1.6rem; 
+    font-style: italic;
+    color: rgb(199, 32, 32);
+    text-shadow: 1px 1px #000;
+}
+
+button {   
+    position: relative;
+    top: -85px;
+    left: 130px;
+    width: 110px;
+    height: 50px;
+    border: none;  
+    border-radius: 10px; 
+    background-color: rgb(241, 207, 54);
+    box-shadow: 2px 2px 1px black;
+    transition: all 100ms;
+}
+
+button:hover,
+button:focus {
+    outline: none;
+    top: -86px;
+    left: 129px;
+    box-shadow: 3px 3px 2px black;
+    cursor: pointer;
+    animation: pulse 1s linear infinite;
+}
+
+button:active {
+    background-color: rgb(251, 207, 54);
+    box-shadow: -1px -1px 1px black;
+    top: -83px;
+    left: 131px;
+    animation: none;
+}
+
+span {
+    font-size: 2rem;
+    font-style: italic;
+    color: rgb(68, 202, 202);
+    text-shadow: 0 0 2px black, 0 0 2px black, 0 0 1px black, 0 0 1px black;
+    text-align: center;
+    width: 90%;
+}
+
+/* bottom bit */
+
+.background {
+    background-image: 
+    linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0) 30%, rgba(255, 255, 255, 0) 100%), url(./assets/this-one-sein-char.png);
+    height: 70vh;
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+
+p.display-quote {
+    width: 85%;
+    font-size: 1.3rem;
+    font-style: italic;
+    text-align: center;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    padding-left: 30px;
+}
+
+div.answer {
+    margin-top: 40px;
+}
+
+input[type='text'] {
+    font-size: 1.3rem;
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, 0.637);
+    border-radius: 5px;
+}
+
+input[type='text']::placeholder {
+    color: rgba(0, 0, 128, 0.479);
+    font-size: 1rem;
+}
+
+/* styling for submit button */
+input[type='submit'] {
+    border: none;
+    height: 50px;
+    width: 150px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.3rem;
+    margin: 10px 0;
+    border: 1px solid rgba(0, 0, 0, 0.637);
+    border-radius: 5px;
+    background-color:white;
+    transition: all 100ms;
+}
+
+input[type='submit']:hover,
+input[type='submit']:focus {
+    color: rgb(199, 32, 32);
+    background-color:rgb(241, 207, 54);
+    text-shadow: 1px 1px black;
+    transform: rotateZ(-10deg);
+    border-radius: 50%;
+    border: none;
+    box-shadow: 1px 1px 1px black;
+}
+
+
+
+/*--------------- added with js ---------------*/
+.timer-styles {
+    font-size: calc(7rem + 3vw);
+    font-style: italic;
+    color: green;
+    padding-right: 15px;
+    text-align: center;
+}
+
+.ten-secs-left {
+    animation: grow 11s ease-out 1;
+}
+
+.shame {
+    background-image: url(./assets/kisspng-jerry-seinfeld-business-comedian-birmingham-seinfeld-5b4a68e886e159.3009035615316031765525.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center top;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 240px;
+    font-size: 4rem;
+    color: red;
+    text-shadow: 1px 1px black;
+    position: relative;
+    top: -175px;
+    transform: rotate(-10deg);
+}
+
+.vanish {
+    display: none;
+}
+
+.right-wrong {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+@keyframes pulse {
+    0%, 100% {
+        box-shadow: 3px 3px 2px black;
+    }
+
+    50% {
+        box-shadow: 3px 3px 2px black, 0 0 20px rgb(0, 252, 231), 0 0 20px lawngreen;
+    }
+}
+
+@keyframes grow {
+    0% {
+        font-size: calc(7rem + 3vw);
+    }
+
+    50% {
+        color: red;
+    }
+
+    100% {
+        font-size: calc(14rem + 3vw);
+        color: red;  
+    }
+}
